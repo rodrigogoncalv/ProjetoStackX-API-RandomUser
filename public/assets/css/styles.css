@@ -1,0 +1,197 @@
+body {
+    font-family: "Montserrat", sans-serif; /* Define a família de fontes */
+    background-image: url('/assets/images/download.gif');
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: #567CAB;
+    font-size: 45px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.user-list {
+    max-width: 600px; /* Defina a largura máxima conforme desejado */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 0;
+    list-style-type: none;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Defina a largura máxima conforme desejado */
+    margin-left: 100;
+    margin-right: auto; /* Centraliza os itens da lista */
+}
+
+.user-item input[type="checkbox"] {
+    margin-right: 20px; /* Espaçamento entre o checkbox e a imagem */
+    transform: scale(1.5); /* Aumenta o tamanho do checkbox */
+}
+
+.user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.add-user-button, .delete-user-button {
+    display: inline-flex; 
+    align-items: center;  
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #567CAB;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    min-width: 200px; 
+    justify-content: center; /* Centraliza o texto e o ícone */
+    gap: 10px; /* Adiciona espaço entre o ícone e o texto */
+<<<<<<< HEAD
+    cursor: pointer;
+=======
+>>>>>>> 5d87c2c35a97b984fcfa02cc464428dd1dc7b367
+}
+
+.delete-user-button {
+    background-color: #770303;
+}
+
+.material-icons {
+    font-size: 24px;
+    vertical-align: middle; /* Garante o alinhamento com o texto */
+    display: inline-block; /* Garante que o ícone sempre apareça ao lado do texto */
+}
+
+.add-user-button:hover, .delete-user-button:hover {
+    background-color: #fff;
+    color: #2b2b2b;
+    transition: background-color 0.3s ease; 
+}
+
+.delete-user-button:hover {
+    color:#721c24
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin: 10px auto; /* Centraliza o alerta */
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px; /* Define a largura máxima */
+    width: 100%; /* Garante que o alerta use toda a largura até o limite máximo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px; /* Reduz o tamanho do título */
+    }
+
+    .user-item {
+        flex-direction: column; /* Organiza a imagem e o texto em coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+        padding: 8px;
+        max-width: 100%; /* Garante que o item da lista ocupe toda a largura disponível */
+        box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    }
+
+    .user-item input[type="checkbox"] {
+        margin-top: 15px;
+        margin-left: -200px; /* Move o checkbox mais para a esquerda */
+        margin-bottom: 10px;
+        margin-right: 15px; 
+    }
+
+    .user-image {
+        width: 60px; /* Reduz o tamanho da imagem */
+        height: 60px;
+        margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+    }
+
+    .user-info p {
+        font-size: 15px; /* Reduz o tamanho da fonte dos textos */
+        margin: 5px 0; /* Ajusta a margem dos parágrafos */
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Organiza os botões em uma coluna */
+        align-items: center; /* Centraliza os botões horizontalmente */
+        gap: 10px; /* Adiciona espaçamento entre os botões */
+    }
+
+    .add-user-button, .delete-user-button {
+        margin: 0; /* Remove margens */
+        font-size: 14px; /* Reduz o tamanho da fonte do botão */
+        padding: 8px 12px; /* Ajusta o padding do botão */
+    }
+
+    .material-icons {
+        font-size: 18px; /* Reduz o tamanho do ícone */
+    }
+
+    .delete-user-button:hover {
+        color:#721c24
+    }
+
+    .alert {       
+        padding: 6px 10px; 
+        margin: 10px auto; 
+        max-width: 90%; 
+        box-sizing: border-box; 
+        text-align: center; 
+    }
+
+    .alert p {
+        margin: 0; /* Remove a margem padrão do parágrafo */
+        font-size: 18px; 
+    }
+}   
+
+/* Media Query para telas maiores (como tablets e desktops) */
+@media (min-width: 601px) {
+    .user-item {
+        max-width: 600px; /* Mantém a largura máxima no desktop */
+        margin-left: auto; /* Centraliza o item da lista horizontalmente */
+        margin-right: auto;
+    }
+
+    .add-user-button, .delete-user-button  {
+        font-size: 18px; /* Mantém o tamanho da fonte do botão no desktop */
+        padding: 10px 20px;
+    }
+
+    .material-icons {
+        font-size: 24px; /* Mantém o tamanho do ícone no desktop */
+    }
+}
